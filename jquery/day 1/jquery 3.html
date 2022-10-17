@@ -1,0 +1,31 @@
+<!--
+   3. Create an HTML5 page which contains a hyperlink. Using jQuery, write code to open Google’s home page in another window when the mouse is hovered over the link.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery day 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <h4>Take cursor on the link to open google homepage...</h4>
+    <p id="demo">https://www.google.com</p>
+    <!--<a id="demo" href ="https://www.google.com">https://www.google.com></a>-->
+
+    <script>
+        $(function () {
+            $('#demo').mouseover(function () {
+                window.open("https://www.google.com")
+            })
+        })
+    </script>
+
+</body>
+
+</html>

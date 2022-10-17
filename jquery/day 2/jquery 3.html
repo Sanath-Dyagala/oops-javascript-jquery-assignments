@@ -1,0 +1,58 @@
+<!--Create an HTML5 page with a jQuery accordian as follows:-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery day 2</title>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script>
+        $(function () {
+            $("#accordion").accordion();
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div style="background-color: greenyellow; padding: 20px ; padding-right: 0px;">
+        <h1>The Accordian!</h1>
+        <div id="accordion">
+            <h1>C#</h1>
+            <div>
+                <p>C# is an object oriented language which gives a clear structure to program and allows code to be
+                    reused, lowering development costs.</p>
+            </div>
+
+            <h1>LINQ</h1>
+            <div>
+                <p>LINQ is a 'language integrated query' LINQ provides the new way to manipulate the data,
+                    whether it is to or from the database or with in an XML file or with a simple list of dynamic data.
+                </p>
+
+            </div>
+
+
+            <h1>JQUERY</h1>
+            <div>
+                <p>jQuery UI is a curated set of user interface interactions,effects,widgets,and themes built
+                    on top of the jQuery javascript library.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

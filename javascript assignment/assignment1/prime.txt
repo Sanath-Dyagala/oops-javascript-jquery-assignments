@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Numbers</title>
+</head>
+
+<body>
+    <script>
+        let number;
+        let divider, flag;
+        for (number = 5; number <= 50; number++) {
+            for (divider = 2; divider < number; divider++) {
+
+
+                if (number % divider == 0) {
+                    flag == 1;
+                    break;
+                }
+                else {
+                    flag = 0;
+                    console.log("Prime numbers are: " + number);
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

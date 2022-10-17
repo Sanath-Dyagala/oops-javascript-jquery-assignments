@@ -1,0 +1,55 @@
+<!--
+   2.Create an HTML5 page with the following UI:
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery day 2</title>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+
+    <style>
+        .ui-widget-header,
+        .ui-button,
+        .ui-state-default {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="height: 100px; width: 100px; background-color: rgb(184, 184, 120); padding: 20px; "><br>
+        <p><b>The dialog</b></p>
+        <button id="btn">click me!</button>
+    </div>
+
+    <div id="d1">Are you sure you want to do this?</div>
+    <script>
+        $(function () {
+            $('#d1').dialog({
+                autoOpen: false,
+                buttons: {
+                    'Yes I do!': function () { $(this).dialog("close"); },
+                    'No': function () { }
+                },
+                title: "Attention!!"
+            });
+            $('#btn').click(function () {
+                $('#d1').dialog("open");
+            })
+        });
+    </script>
+
+</body>
+
+</html>

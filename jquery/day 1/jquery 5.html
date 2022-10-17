@@ -1,0 +1,34 @@
+<!--
+    5.Create an HTML5 page. The page contains a textbox and a button titled Login. Disable the button initially using jQuery. 
+    The moment something is typed in the textbox, enable the button. Disable it again if the textbox is empty.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery day 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <input type="text" id="txt" onkeyup="manage(this)" />
+    <button id="btsubmit" disabled="true">Login</button>
+
+    <script>
+        function manage(txt) {
+            var bt = document.getElementById('btsubmit');
+            if (txt.value != '') {
+                bt.disabled = false;
+            }
+            else {
+                bt.disabled = true;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
